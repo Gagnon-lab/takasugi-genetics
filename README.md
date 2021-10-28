@@ -20,11 +20,7 @@ We recommend running this pipeline on a high-performance computing cluster as it
 
 Although most of the instructions can be found [here](https://github.com/mckennalab/SingleCellLineage), we briefly outline the instructions to get started on a HPC. 
 
-**Dependencies**
-* Docker-like container 
-* Javascript/HTML/D3
-
-First, download the Docker container. The Center for High Performance Computing (CHPC) at the University of Utah offers Singularity as a container environment and one can download the container as a Singularity image like so: 
+First, download the Docker container. The Center for High Performance Computing (CHPC) at the University of Utah offers Singularity as a container environment, and one can download the container as a Singularity image like so: 
 
 ```
 singularity build GESTALT.sif docker://aaronmck/genomics:sc_GESTALT 
