@@ -20,7 +20,7 @@ We recommend running this pipeline on a high-performance computing cluster as it
 
 Although most of the instructions can be found [here](https://github.com/mckennalab/SingleCellLineage), we briefly outline the instructions to get started on a HPC. 
 
-# Dependencies
+**Dependencies**
 * Docker-like container 
 * Javascript/HTML/D3
 
