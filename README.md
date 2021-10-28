@@ -79,7 +79,7 @@ This will produce the barcode edit plot for "Injection delivery of LbaCas12a RNP
 
 Commands for reproducing the other figures are as follows: 
 
-**Figure 4D**: `python swarmplot.py`
+### **Figure 4D**: `python swarmplot.py`
 This produces a beeswarm plot of the average number of edits per barcode under various CRISPR systems including previous versions of GESTALT. This relies on previously published datasets which are included in the `data/` directory. 
 
 **Figure 4E**: `python plotCDF.py` 
