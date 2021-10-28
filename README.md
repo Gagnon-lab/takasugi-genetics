@@ -44,7 +44,52 @@ mkdir -p OUTPUT
 singularity -exec --bind $DATA_DIR:/my_data GESTALT.sif /my_data/run_gestalt_pipeline.sh
 ```
 
-One should copy all the above files and FASTQs into your `$DATA_DIR`. 
+You should copy all the above files and FASTQs into your `$DATA_DIR`. 
 
 ## For generating figures using processed data
+If step 1 is done successfully, the pipeline would have created a number of files in an output directory for each sample within `OUTPUT/`. For most of the CRISPR recording analysis, we used the `.allReadCounts` files outputted from the pipeline to compare barcodes between different embryos. **I've included these files in the `data/readcounts_files/` directory, but one could also download it from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186338) as well.**
+
+The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S5**. The files can be found within the *var/www/html* directory.
+
+Within `var/www/html`, each sample will have its own folder as follows:
+```
+var/www/html
+  |_viz-Output
+    |_Lba1
+      |_Lba1.perBase 
+      |_Lba1.topReadEventsNew 
+      |_Lba1.topReadCounts 
+      |_read_editing_mutlihistogram.html
+      |_read_editing_mutlihistogram.js
+      |_barcode.referenceseq.fa.cutSites 
+      |_Lba1.allReadCounts 
+      |_JS_files.js
+    |_...
+```
+
+```
+# enter the directory for sample Lba1
+cd Lba1/ 
+
+# open up a local server on your computer
+python -m http.server 8080
+```
+
+This will produce the barcode edit plot for "Injection delivery of LbaCas12a RNPs" in **Figure 4C** and can be done for any of the other samples. 
+
+Commands for reproducing the other figures are as follows: 
+
+**Figure 4D**: `python swarmplot.py`
+This produces a beeswarm plot of the average number of edits per barcode under various CRISPR systems including previous versions of GESTALT. This relies on previously published datasets which are included in the `data/` directory. 
+
+**Figure 4E**: `python plotCDF.py` 
+Produces the cumulative density of barcodes within a representative embryo for each CRISPR system. 
+
+**Figure 4F**: `python percentIndels.py` 
+Produces a beeswarm showing the average rate of single-site edits in a typical barcode within a sample under each CRISPR system. 
+
+**Figure S5**: `python cosim-heatmap.py`
+Produces a heatmap of barcode similarity between different embryos based on the cosine similarity metric. Depending on which samples you want to compare, you need to set the `samples` variable in the script to one of the list variables. For example, if you want to compare all SpyCas9-edited embryos based on cosine similarity, simply set `samples` to `Spy_edited`. **Note**: Generating the heatmap in Figure S5E does take about ~5 hours. 
+
+
 
