@@ -1,0 +1,2 @@
+java -Xmx4g -jar /app/queue.jar -S /my_data/gestalt_pipeline_no_trees.scala -i /my_data/embryo-samples.tearsheet.txt --web /my_data/var/www/html --aggLocation /my_data/var/www/html/merged-data/ --expName viz-Output --eda /app/EDNAFULL.Ns_are_zero --matchProportion 0.85 --matchCount 90 --primersToUse "BOTH" -run -resMemReqParam mfree -s /app/sc_GESTALT/scripts/ -b /app/bin/ --scala "/usr/bin/scala -nocompdaemon" 
+cp -r /my_data/var/www/html /my_data/OUTPUT
