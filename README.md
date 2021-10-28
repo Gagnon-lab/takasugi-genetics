@@ -82,13 +82,13 @@ Commands for reproducing the other figures are as follows:
 #### **Figure 4D**: `python swarmplot.py`
 This produces a beeswarm plot of the average number of edits per barcode under various CRISPR systems including previous versions of GESTALT. This relies on previously published datasets which are included in the `data/` directory. 
 
-**Figure 4E**: `python plotCDF.py` 
+#### **Figure 4E**: `python plotCDF.py` 
 Produces the cumulative density of barcodes within a representative embryo for each CRISPR system. 
 
-**Figure 4F**: `python percentIndels.py` 
+#### **Figure 4F**: `python percentIndels.py` 
 Produces a beeswarm showing the average rate of single-site edits in a typical barcode within a sample under each CRISPR system. 
 
-**Figure S5**: `python cosim-heatmap.py`
+#### **Figure S5**: `python cosim-heatmap.py`
 Produces a heatmap of barcode similarity between different embryos based on the cosine similarity metric. Depending on which samples you want to compare, you need to set the `samples` variable in the script to one of the list variables. For example, if you want to compare all SpyCas9-edited embryos based on cosine similarity, simply set `samples` to `Spy_edited`. **Note**: Generating the heatmap in Figure S5E does take about ~5 hours. 
 
 
