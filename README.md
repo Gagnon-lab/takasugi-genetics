@@ -60,7 +60,7 @@ If step 1 is done successfully, the pipeline would have created a number of file
 
 The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S4**. These files can be found within the *var/www/html* directory.
 
-Within `var/www/html`, each sample will have its own folder as follows:
+Within `var/www/html`, each sample will have its own folder with the following files:
 ```
 var/www/html
   |_viz-Output
