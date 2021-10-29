@@ -86,10 +86,10 @@ This produces a beeswarm plot of the average number of edits per barcode under v
 Produces the cumulative density of barcodes within a representative embryo for each CRISPR system. 
 
 #### **Figure 4F**: `python percentIndels.py` 
-Produces a beeswarm showing the average rate of single-site edits in a typical barcode within a sample under each CRISPR system. 
+Produces a beeswarm showing the average rate of single-site edits in a barcode within a sample under each CRISPR system. 
 
 #### **Figure S5**: `python cosim-heatmap.py`
-Produces a heatmap of barcode similarity between different embryos based on the cosine similarity metric. Depending on which samples you want to compare, you need to set the `samples` variable in the script to one of the list variables. For example, if you want to compare all SpyCas9-edited embryos based on cosine similarity, simply set `samples` to `Spy_edited`. **Note**: Generating the heatmap in Figure S5E does take about ~5 hours. 
+Produces a heatmap of barcode similarity between different embryos based on the cosine similarity metric. Depending on which samples you want to compare, you need to set the `samples` variable in the script to one of the assigned list variables. For example, if you want to compare all SpyCas9-edited embryos based on cosine similarity, simply set `samples` to `Spy_edited`. **Note**: Generating the heatmap in Figure S5E (for `All_edited`) does take about ~5 hours. 
 
 
 
