@@ -60,7 +60,7 @@ If step 1 is done successfully, the pipeline would have created a number of file
 
 The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S4**. These files can be found within the *var/www/html* directory.
 
-Within `var/www/html`, each sample will have its own folder with the following files:
+Within `var/www/html`, each sample will have its own folder with such files:
 ```
 var/www/html
   |_viz-Output
@@ -84,7 +84,7 @@ cd Lba1/
 python -m http.server 8080
 ```
 
-Opening up `read_editing_mutlihistogram.html` in your web browser will let you view the barcode edit plot for "Injection delivery of LbaCas12a RNPs" in **Figure 4C**. The same can be done to view the plots for any of the other samples. 
+Opening up read_editing_mutlihistogram.html in your web browser will let you view the barcode edit plot for "Injection delivery of LbaCas12a RNPs" in **Figure 4C**. The same can be done to view the plots for any of the other samples. 
 
 Commands for reproducing the other figures are as follows: 
 
