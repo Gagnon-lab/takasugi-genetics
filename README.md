@@ -3,9 +3,9 @@
 
 This repository contains all the necessary code and data files to reproduce the following figure, Figure S4, and S5 of the manuscript. 
 
-![](img/fig4.png)
-
 Below is Figure 4, which exemplifies the potential of our orthogonal CRISPR system for in vivo recording. Parts C-F can be created using this repository. 
+
+![figure text](img/fig4.png)
 
 **The basic outline is as follows:**
   1. Identify high-quality CRISPR-induced mutations in barcodes by running the GESTALT pipeline (McKenna et al. 2016).
