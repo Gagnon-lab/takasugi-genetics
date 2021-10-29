@@ -29,7 +29,7 @@ singularity build GESTALT.sif docker://aaronmck/genomics:sc_GESTALT
 ```
 
 The rest of the files needed to run the pipeline can be mostly found in `pipeline/` and are as follows:
-1. `barcode.referenceseq.fa`: fasta file containing the barcode sequence including
+1. `barcode.referenceseq.fa`: fasta file containing the barcode sequence including the regions where primers bind
 2. `barcode.referenceseq.fa.primers`: primer sequences expected to be on both ends of the amplicon for sequencing, one on each line. 
 3. `barcode.referenceseq.fa.cutSites`: tab-delimited file with three columns; the first indicates the sequence of the CRISPR target, the second is the start position (5') of that target, and the third is the position of the predicted cutsite depending on the Cas system. 
 4. `gestalt_pipeline_no_trees.scala`: pipeline script that is dependent on the GATK Queue processing engine 
