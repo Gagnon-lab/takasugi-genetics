@@ -3,9 +3,9 @@
 
 This repository contains all the necessary code and data files to reproduce the following figure, Figure S4, and S5 of the manuscript. 
 
-![](img/fig4.png)
-
 Below is Figure 4, which exemplifies the potential of our orthogonal CRISPR system for in vivo recording. Parts C-F can be created using this repository. 
+
+![figure text](img/fig4.png)
 
 **The basic outline is as follows:**
   1. Identify high-quality CRISPR-induced mutations in barcodes by running the GESTALT pipeline (McKenna et al. 2016).
@@ -49,9 +49,18 @@ singularity -exec --bind $DATA_DIR:/my_data GESTALT.sif /my_data/run_gestalt_pip
 You should copy all the above files and FASTQs into your `$DATA_DIR`. 
 
 ## For generating figures using processed data
+
+### Dependencies 
+ * Javascript/HTML/D3
+ * `python 3.8.5`
+ * `numpy (v1.20.1)`
+ * `pandas (v1.2.4)`
+ * `matplotlib (v3.3.4)`
+ * `seaborn (v0.11.1)`
+
 If step 1 is done successfully, the pipeline would have created a number of files in an output directory for each sample within `OUTPUT/`. For most of the CRISPR recording analysis, we used the `.allReadCounts` files outputted from the pipeline to compare barcodes between different embryos. **I've included these files in the `data/readcounts_files/` directory, but one could also download it from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186338) as well.**
 
-The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S5**. The files can be found within the *var/www/html* directory.
+The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S4**. These files can be found within the *var/www/html* directory.
 
 Within `var/www/html`, each sample will have its own folder as follows:
 ```
@@ -77,7 +86,7 @@ cd Lba1/
 python -m http.server 8080
 ```
 
-This will produce the barcode edit plot for "Injection delivery of LbaCas12a RNPs" in **Figure 4C** and can be done for any of the other samples. 
+Opening up `read_editing_mutlihistogram.html` in your web browser will let you view the barcode edit plot for "Injection delivery of LbaCas12a RNPs" in **Figure 4C**. The same can be done to view the plots for any of the other samples. 
 
 Commands for reproducing the other figures are as follows: 
 
