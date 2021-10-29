@@ -3,6 +3,8 @@
 
 This repository contains all the necessary code and data files to reproduce the following figure, Figure S4, and S5 of the manuscript. 
 
+!(img/fig4.png)
+
 Below is Figure 4, which exemplifies the potential of our orthogonal CRISPR system for in vivo recording. Parts C-F can be created using this repository. 
 
 **The basic outline is as follows:**
