@@ -11,8 +11,6 @@ Below is Figure 4, which exemplifies the potential of our orthogonal CRISPR syst
   1. Identify high-quality CRISPR-induced mutations in barcodes by running the GESTALT pipeline (McKenna et al. 2016).
   2. Process outputs of edited barcodes to generate main and supplemental figures. 
 
-**If you want to generate the figures without spending a lot of time and compute for step 1, skip to section [For generating figures using processed data](https://github.com/Gagnon-lab/takasugi-genetics/#For-generating-figures-using-processed-data)**.
-
 ## Data pre-processing using GESTALT pipeline 
 To call CRISPR-induced mutations, we have adapted the pipeline from https://github.com/aaronmck/Cas9FateMapping. Briefly, this takes raw sequencing data, merges paired reads, aligns resulting consensus sequences to the reference, and generates output files for further processing and downstream analysis. 
 
