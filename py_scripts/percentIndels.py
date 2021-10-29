@@ -13,7 +13,6 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
 import re 
-import statistics
 import barcode_utils as utils 
 
 # fonts

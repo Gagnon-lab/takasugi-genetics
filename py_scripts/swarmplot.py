@@ -11,7 +11,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import re
 import seaborn as sns 
-import statistics 
 import barcode_utils as utils
 
 # fonts
