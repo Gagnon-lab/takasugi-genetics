@@ -21,7 +21,7 @@ To generate processed outputs from sequencing data, first download the raw FASTQ
 We recommend running this pipeline on a high-performance computing cluster as it will require quite a bit of memory (and time) to execute. 
 Although most of the instructions can be found [here](https://github.com/mckennalab/SingleCellLineage), we briefly outline the instructions to get started on a HPC. One may need to adapt these instructions according to the specifications of your HPC. 
 
-**Dependency required**
+### Dependency required
 * Docker-like container 
 
 First, download the Docker container. The Center for High Performance Computing (CHPC) at the University of Utah offers Singularity as a container alternative, and one can download the container as a Singularity image like so: 
