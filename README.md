@@ -49,6 +49,9 @@ singularity -exec --bind $DATA_DIR:/my_data GESTALT.sif /my_data/run_gestalt_pip
 You should copy all the above files and FASTQs into your `$DATA_DIR`. 
 
 ## For generating figures using processed data
+
+#### Dependencies 
+
 If step 1 is done successfully, the pipeline would have created a number of files in an output directory for each sample within `OUTPUT/`. For most of the CRISPR recording analysis, we used the `.allReadCounts` files outputted from the pipeline to compare barcodes between different embryos. **I've included these files in the `data/readcounts_files/` directory, but one could also download it from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186338) as well.**
 
 The pipeline will also generate visualization output necessary to make plots such as **Figure 4C** and all the plots in **Figure S4**. These files can be found within the *var/www/html* directory.
