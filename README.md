@@ -4,6 +4,7 @@
 This repository contains all the necessary code and data files to reproduce the following figure, Figure S4, and S5 of the manuscript. 
 
 Below is Figure 4, which exemplifies the potential of our orthogonal CRISPR system for in vivo recording. Parts C-F can be created using this repository. 
+`Comparison_CRISPRsystems.Rmd` (a notebook in RMarkdown) can be used to reproduce the statistical analyses that supported our comparisons of different CRISPR recorders. 
 
 ![figure text](img/fig4.png)
 
