@@ -91,7 +91,7 @@ Opening up read_editing_mutlihistogram.html in your web browser will let you vie
 Commands for reproducing the other figures are as follows: 
 
 #### **Figure 4D**: `python swarmplot.py`
-This produces a beeswarm plot of the average number of edits per barcode under various CRISPR recorders including previous versions of GESTALT. This relies on previously published datasets which are included in the `data/` directory. 
+This produces a beeswarm plot of the average number of edits per barcode under various CRISPR recorders including previous versions of GESTALT. This relies on previously published datasets which are included in the `data/` directory. `scGESTALT_readcounts/` reflect embryo data underlying *Raj et al. 2018*. `embryo_all_reads_Mar_23_2016.txt` is the underlying GESTALT data from *McKenna et al. 2016*. 
 
 #### **Figure 4E**: `python plotCDF.py` 
 Illustrates the cumulative density of barcodes within a representative embryo for each CRISPR system. 
