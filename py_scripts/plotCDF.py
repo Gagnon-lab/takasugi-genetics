@@ -66,7 +66,6 @@ plt.xlim([0,1000])
 plt.xlabel('Unique barcodes')
 
 plt.tight_layout()
-# plt.savefig("CDF.linewidth3.legendlowerRight-v3.svg", format='svg', dpi=300)
 plt.show() 
 
 
